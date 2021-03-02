@@ -1,8 +1,10 @@
-body {
+/*body {
+
   background: linear-gradient(-45deg, #02020d, #151584);
   animation: gradient 25s ease infinite;
   background-size: 400% 400%;
-}
+
+}*/
 
 #type-css h1 {
   animation: type 3.5s steps(35, end), cursor 1s step-end infinite;
