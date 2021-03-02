@@ -1,50 +1,175 @@
-svg {
-  overflow: visible;
-  width: 100px;
-  height: 150px;
-    margin: 0 auto;
-    display: block;  
-}
-svg g {
-  animation: slide 2s linear infinite;
-}
-svg g:nth-child(2) {
-  animation-delay: 0.5s;
-}
-svg g:nth-child(2) path {
-  animation-delay: 0.5s;
-  stroke-dasharray: 0px 158px;
-  stroke-dashoffset: 1px;
-}
-svg path {
-  stroke: url(#gradient);
-  stroke-width: 20px;
-  stroke-linecap: round;
-  fill: none;
-  stroke-dasharray: 0 157px;
-  stroke-dashoffset: 0;
-  animation: escalade 2s cubic-bezier(0.8, 0, 0.2, 1) infinite;
+body {
+  background: linear-gradient(-45deg, #02020d, #151584);
+  animation: gradient 25s ease infinite;
+  background-size: 400% 400%;
 }
 
-@keyframes slide {
-  0% {
-    transform: translateY(-50px);
-  }
-  100% {
-    transform: translateY(50px);
-  }
+#type-css h1 {
+  animation: type 3.5s steps(35, end), cursor 1s step-end infinite;
 }
-@keyframes escalade {
-  0% {
-    stroke-dasharray: 0 157px;
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dasharray: 156px 157px;
-    stroke-dashoffset: 0;
-  }
-  100% {
-    stroke-dasharray: 156px 157px;
-    stroke-dashoffset: -156px;
-  }
+#type-js {
+  animation: cursor 1s step-end infinite;
+}
+@keyframes type {
+  from { width: 0; }
+  to { width: 110%; }
+}
+@keyframes cursor {
+  from, to { border-color: transparent; }
+  50% { border-color: #fff; }
+}
+
+
+
+.box-outer {
+	overflow: hidden;
+	margin: 50px auto;
+	width: 200px;
+	height: 200px;
+}
+.main_box {
+	width: 200px;
+	height: 200px;
+	position: relative;
+	background: #f34c4c;
+	border: 5px solid #000;
+}
+.bar {
+	position: absolute;
+	width: 50px;
+	height: 5px;
+	background: #fff;
+	transition: all 1s linear;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+.bar.delay {
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+}
+.top {
+	top: -5px;
+	left: -5px;
+}
+.right {
+	top: 18px;
+	right: -28px;
+	transform: rotate(90deg);
+}
+.bottom {
+	bottom: -5px;
+	left: -5px;
+}
+.left {
+	top: 18px;
+	left: -28px;
+	transform: rotate(90deg);
+}
+ .about__pic .about__pic-bg,
+ .about__pic .about__pic-image:after {
+	-webkit-animation: .5s infinite noise;
+	animation: .5s infinite noise
+}
+
+ @-webkit-keyframes h-move {
+ 0% {left: -5px;}
+100% {left: 200px;}
+}
+ @keyframes h-move {
+ 0% {left: -5px;}
+100% {left: 200px;}
+}
+.top, .bottom {
+	-webkit-animation-name: h-move;
+	animation-name: h-move;
+}
+ @-webkit-keyframes v-move {
+    0% {top: -5px;}
+    100% {top:228px;}
+}
+ @keyframes v-move {
+  0% {top: -5px;}
+  100% {top:228px;}
+}
+.right, .left {
+	-webkit-animation-name: v-move;
+	animation-name: v-move;
+}
+
+@-webkit-keyframes noise {
+	0%,
+	to {
+		background-position: 0 0
+	}
+	10% {
+		background-position: -5% -10%
+	}
+	20% {
+		background-position: -15% 5%
+	}
+	30% {
+		background-position: 7% -25%
+	}
+	40% {
+		background-position: 20% 25%
+	}
+	50% {
+		background-position: -25% 10%
+	}
+	60% {
+		background-position: 15% 5%
+	}
+	70% {
+		background-position: 0 15%
+	}
+	80% {
+		background-position: 25% 35%
+	}
+	90% {
+		background-position: -10% 10%
+	}
+}
+
+@keyframes noise {
+	0%,
+	to {
+		background-position: 0 0
+	}
+	10% {
+		background-position: -5% -10%
+	}
+	20% {
+		background-position: -15% 5%
+	}
+	30% {
+		background-position: 7% -25%
+	}
+	40% {
+		background-position: 20% 25%
+	}
+	50% {
+		background-position: -25% 10%
+	}
+	60% {
+		background-position: 15% 5%
+	}
+	70% {
+		background-position: 0 15%
+	}
+	80% {
+		background-position: 25% 35%
+	}
+	90% {
+		background-position: -10% 10%
+	}
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%}
+  50% { background-position: 100% 50%}
+  100% { background-position: 0% 50%}
 }
