@@ -301,6 +301,6 @@ box-shadow: 0px 28px 78px 49px rgba(0, 0, 0, 0.2);
 	.timeline-event-thumbnail {font-size: 0.7em;}
 	.timeline-event-copy p:not(.timeline-event-thumbnail) {font-size: 0.7em;}
 	.timeline-event-copy h3 {font-size: 1.45em;}
-	.timeline-event-copy h4 {font-size: 0.9em;margin-bottom: 0.7em;}
+	.timeline-event-copy h4 {font-size: 0.9em;margin-bottom: 0.9em;}
 
 }
