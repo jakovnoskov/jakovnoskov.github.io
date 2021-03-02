@@ -279,19 +279,18 @@ box-shadow: 0px 28px 78px 49px rgba(0, 0, 0, 0.2);
 
 
 @media screen and (max-width: 980px) {
-	.item-d-side {width: 100%; max-width: 90%;}
 	.item-d-side.ids-r {width: 18em;height: 18em;}
 	.ids-ittem-name, .ids-ittem-g-name {font-size: 30px;}
 	.ids-ittem-description, .ids-ittem-g-text {padding: 20px 0px; font-size: 15px;}
 	#type-css h1 {font-size: 2em;}
 	.title-box {height: 2em;}
-
 	.timeline-event-copy {padding: 0;left: 2em;}
 	.timeline:before { left: 0.9em;}
 	.timeline-event-icon { top: -2em;left: 0.9em;}
 	.timeline {    max-width: 90%;}
     .description-box { padding: 2em;}
 	.about__pic{position: unset; width: 18em;height: 18em;}
+	.about__pic .about__pic-bg {border-color: #061a6c14;}
 }
 
 @media screen and (max-width: 760px) {
