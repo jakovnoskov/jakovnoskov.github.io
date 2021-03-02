@@ -54,12 +54,13 @@ table {
   align-items: center;
   justify-content: center;
   max-width: 58em;
-  padding-top: 7em;
-  padding-bottom: 7em;
+  padding-top: 12em;
+  padding-bottom: 12em;
 	height: 100%;
 	position: relative;
 	width: 100%;
 	margin:0 auto;
+	justify-content: space-between;
 }
 .item-d-side {
 	width:50%;
@@ -120,7 +121,7 @@ body a{color:#fff;display: inline-block;margin-bottom:15px;}
 
   .item-d-side.ids-r {
 	position: relative;
-    height: 26.75em;
+    top: -10em;
   }
 
   .about__pic {
@@ -155,7 +156,7 @@ box-shadow: 25px 26px 45px 10px rgba(0, 0, 0, 0.25);
 }
 
 .about__pic .about__pic-bg {
-	border-color: #061a6c;
+	border-color: transparent;
 	top: -3.125em;
 	right: 2.75em;
 	background: url(../img/noise1.png) 50% repeat;
@@ -163,10 +164,59 @@ box-shadow: 25px 26px 45px 10px rgba(0, 0, 0, 0.25);
 }
 
 .shadow{
+	z-index: 3;
 	position: relative;
 	-webkit-box-shadow: 0px 28px 78px 49px rgba(0, 0, 0, 0.2);
--moz-box-shadow: 0px 28px 78px 49px rgba(0, 0, 0, 0.2);
-box-shadow: 0px 28px 78px 49px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 28px 78px 49px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 28px 78px 49px rgba(0, 0, 0, 0.2);
+	padding-top: 3em;
+	background: #1a40c5;
+}
+
+/* Styling scroll Contact*/
+.contact{
+    background: #2351f4;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+}
+.scrollContact-box{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	max-width: 58em;
+    margin: 0 auto;
+
+}
+
+.scrollContactContent{
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+	-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+	-webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 3em;
+}
+
+.scrollContactContent a {
+    display: block;
+    margin: 0 5em;
 }
 
 /* Styling timeline*/
@@ -279,14 +329,14 @@ box-shadow: 0px 28px 78px 49px rgba(0, 0, 0, 0.2);
 
 
 @media screen and (max-width: 980px) {
-	.item-d-side.ids-r {width: 18em;height: 18em;}
+	.item-d-side.ids-r {width: 18em;height: 18em;top: 0;right: 0;}
 	.ids-ittem-name, .ids-ittem-g-name {font-size: 30px;}
 	.ids-ittem-description, .ids-ittem-g-text {padding: 20px 0px; font-size: 15px;}
 	#type-css h1 {font-size: 2em;}
 	.title-box {height: 2em;}
 	.timeline-event-copy {padding: 0;left: 2em;}
 	.timeline:before { left: 0.9em;}
-	.timeline-event-icon { top: -1.7em;left: 0.9em;}
+	.timeline-event-icon {top: -1.89em; left: 0.9em;}
 	.timeline {    max-width: 90%;}
     .description-box { padding: 2em;}
 	.about__pic{position: unset; width: 18em;height: 18em;}
@@ -303,5 +353,7 @@ box-shadow: 0px 28px 78px 49px rgba(0, 0, 0, 0.2);
 	.timeline-event-copy p:not(.timeline-event-thumbnail) {font-size: 0.9em;}
 	.timeline-event-copy h3 {font-size: 1.45em;}
 	.timeline-event-copy h4 {font-size: 0.9em;margin-bottom: 0.9em;}
-	.item-d-side.ids-r{    margin-bottom: 2em;}
+	.item-d-side.ids-r{margin-bottom: 2em;}
+	.timeline-event-icon {top: -2.03em;}
+	.scrollContactContent a {margin: 0 1.6em;}
 }
