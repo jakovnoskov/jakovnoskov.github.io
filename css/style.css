@@ -247,7 +247,7 @@ box-shadow: 0px 28px 78px 49px rgba(0, 0, 0, 0.2);
 	display: block;
 	margin: 0.5em 0.5em 0.5em -0.5em;
 	position: absolute;
-	top: 0;
+	top: 0.27em;
 	left: 4.5em;
 	width: 1em;
 	height: 1em;
@@ -286,7 +286,7 @@ box-shadow: 0px 28px 78px 49px rgba(0, 0, 0, 0.2);
 	.title-box {height: 2em;}
 	.timeline-event-copy {padding: 0;left: 2em;}
 	.timeline:before { left: 0.9em;}
-	.timeline-event-icon { top: -2em;left: 0.9em;}
+	.timeline-event-icon { top: -1.7em;left: 0.9em;}
 	.timeline {    max-width: 90%;}
     .description-box { padding: 2em;}
 	.about__pic{position: unset; width: 18em;height: 18em;}
