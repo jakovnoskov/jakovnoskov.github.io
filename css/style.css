@@ -33,6 +33,10 @@ body {
 	color:#000;
 }
 
+:root {
+    --theme-color: #2351f4;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -166,6 +170,24 @@ body a{color:#000;display: inline-block;margin-bottom:15px;}
     background: #ffffff;
 }
 
+/* Styling git-link*/
+
+.github-corner {
+    border-bottom: 0;
+    position: fixed;
+    right: 0;
+    text-decoration: none;
+    top: 0;
+    z-index: 5;
+}
+
+.github-corner svg {
+    color: #fff;
+    fill: var(--theme-color,#0000cc);
+    height: 80px;
+    width: 80px;
+}
+
 
 /* Styling Worklist*/
 
@@ -180,11 +202,11 @@ body a{color:#000;display: inline-block;margin-bottom:15px;}
 
 /* Styling scroll Contact*/
 .contact{
-    background: rgb(247,247,247);
-    background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(239,239,239,1) 49%, rgba(212,212,212,1) 100%);
-    position: fixed;
+    border-bottom: 1px solid rgba(230, 230, 230, 1);
+	position: fixed;
     z-index: 4;
     width: 100%;
+	background: #fff;
 }
 .scrollContact-box{
     display: -webkit-box;
