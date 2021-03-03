@@ -281,7 +281,10 @@ body a{color:#000;display: inline-block;margin-bottom:15px;}
 	font-weight: 700;
   }
   .timeline-event-copy p:not(.timeline-event-thumbnail) {
-	padding-bottom: 1.2em;
+    padding-bottom: 1.2em;
+    font-weight: normal;
+    line-height: 2.7em;
+    color: #000;
   }
   
   .timeline-event-icon {
