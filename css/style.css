@@ -344,7 +344,7 @@ body a{color:#000;display: inline-block;margin-bottom:15px;}
 	.about__pic .about__pic-bg, .about__pic .about__pic-image {    position: unset;}
     .about__pic-bg {display: none;}
 	.timeline-event-thumbnail {font-size: 0.7em;}
-	.timeline-event-copy p:not(.timeline-event-thumbnail) {font-size: 0.9em;}
+	.timeline-event-copy p:not(.timeline-event-thumbnail) {font-size: 0.9em;     line-height: 2;}
 	.timeline-event-copy h3 {font-size: 1.45em;}
 	.timeline-event-copy h4 {font-size: 0.9em;margin-bottom: 0.9em;}
 	.timeline-event-copy {padding-right: 2em;}
