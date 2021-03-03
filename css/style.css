@@ -213,6 +213,7 @@ body a{color:#000;display: inline-block;margin-bottom:15px;}
 	background: #fff;
 }
 .scrollContact-box{
+/*
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -221,6 +222,7 @@ body a{color:#000;display: inline-block;margin-bottom:15px;}
     align-items: center;
     justify-content: center;
 	
+*/
     margin: 0 auto;
 }
 
@@ -232,22 +234,23 @@ body a{color:#000;display: inline-block;margin-bottom:15px;}
     display: flex;
 	-webkit-box-pack: justify;
     -ms-flex-pack: justify;
+/*
     -webkit-justify-content: space-between;
     -moz-justify-content: space-between;
     justify-content: space-between;
+*/
 	-webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
     -moz-align-items: center;
     align-items: center;
 	flex-direction: row;
-	justify-content: space-between;
 	height: 3em;
 }
 
 .scrollContactContent a {
 	display: block;
-    margin: 0 5em;
+	margin: 0 5em 0 0;
     color: #3c3c3c;
 }
 
@@ -360,7 +363,7 @@ body a{color:#000;display: inline-block;margin-bottom:15px;}
   }
 
 @media screen and (max-width: 980px) {
-	
+	.scrollContactContent {margin-left: 2em;}
 	.item-d-side.ids-r {width: 320px; height: 320px;top: 0;right: 0;}
 	.ids-ittem-name, .ids-ittem-g-name {font-size: 30px;}
 	.ids-ittem-description, .ids-ittem-g-text {padding: 20px 0px; font-size: 15px;}
@@ -387,8 +390,7 @@ body a{color:#000;display: inline-block;margin-bottom:15px;}
 	.timeline-event-copy {padding-right: 2em;}
 	.item-d-side.ids-r{margin-bottom: 1.5em;}
 	.timeline-event-icon {top: -0.2em; left: 0.1em;}
-	.scrollContactContent a {margin: 0 1.6em;}
+	.scrollContactContent a {margin: 0 1.5em 0 0;}
 	.ids-ittem-description, .ids-ittem-g-text { padding-bottom: 4em;}
 	.work-list li {font-size: 0.9em;}
-	.github-corner {display:none;}
 }
