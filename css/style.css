@@ -57,7 +57,7 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 58em;
+  
   padding-top: 12em;
   padding-bottom: 12em;
 	height: 100%;
@@ -68,6 +68,10 @@ table {
 }
 .item-d-side {
 	width:50%;
+}
+
+.global-box {
+	max-width: 77em;
 }
 
 .ids-ittem-name {
@@ -216,7 +220,7 @@ body a{color:#000;display: inline-block;margin-bottom:15px;}
     display: flex;
     align-items: center;
     justify-content: center;
-	max-width: 58em;
+	
     margin: 0 auto;
 }
 
@@ -260,7 +264,7 @@ body a{color:#000;display: inline-block;margin-bottom:15px;}
 .timeline {
 	margin: 0 auto;
 	position: relative;
-	max-width: 58em;
+	
 	list-style: none;
 	padding-top: 3em;
   }
@@ -351,9 +355,12 @@ body a{color:#000;display: inline-block;margin-bottom:15px;}
 	}
   }
 
-
+  @media screen and (max-width: 1460px) {
+	.global-box {max-width: 58em;}
+  }
 
 @media screen and (max-width: 980px) {
+	
 	.item-d-side.ids-r {width: 320px; height: 320px;top: 0;right: 0;}
 	.ids-ittem-name, .ids-ittem-g-name {font-size: 30px;}
 	.ids-ittem-description, .ids-ittem-g-text {padding: 20px 0px; font-size: 15px;}
