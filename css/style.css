@@ -170,6 +170,18 @@ body a{color:#000;display: inline-block;margin-bottom:15px;}
     background: #ffffff;
 }
 
+
+/* Styling Worklist*/
+
+.work-list {
+    list-style: disc;
+    padding-left: 1em;
+}
+
+.work-list li {
+	padding-bottom: 0.8em;
+}
+
 /* Styling scroll Contact*/
 .contact{
     background: rgb(247,247,247);
@@ -267,7 +279,7 @@ body a{color:#000;display: inline-block;margin-bottom:15px;}
   }
   
   .timeline-event-copy {
-    padding: 0 0 2em 2em;
+    padding: 0 0 4em 2em;
     position: relative;
   }
   .timeline-event-copy h3 {
