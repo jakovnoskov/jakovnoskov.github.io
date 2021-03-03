@@ -269,6 +269,7 @@ body a{color:#000;display: inline-block;margin-bottom:15px;}
   .timeline-event:hover .timeline-event-thumbnail {
 	transition: all 0.3s ease-in-out 0s;
 	background-color: #0000cc;
+	color: #fff;
   }
   .timeline-event:hover .timeline-event-copy h3 {
 	animation-name: color_change;
@@ -315,7 +316,7 @@ body a{color:#000;display: inline-block;margin-bottom:15px;}
   .timeline-event-thumbnail {
     border-radius: 3px;
     font-weight: normal;
-    color: #fff;
+    color: #676767;
     font-size: 1.2em;
     background-color: #e8e8e8;
     box-shadow: inset 0 0 0 0em #ef795a;
@@ -365,5 +366,5 @@ body a{color:#000;display: inline-block;margin-bottom:15px;}
 	.scrollContactContent a {margin: 0 1.6em;}
 	#type-css h1 {text-align: center; width: 100%; animation: none;}
 	.ids-ittem-description, .ids-ittem-g-text { padding-bottom: 4em;}
-	/*#type-css {left: 2.2em;}*/
+	.work-list li {font-size: 0.9em;}
 }
