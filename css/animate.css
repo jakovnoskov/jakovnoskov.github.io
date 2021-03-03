@@ -21,7 +21,10 @@
   50% { border-color: #0000cc; }
 }
 
-
+.github-corner:hover .octo-arm {
+  -webkit-animation: octocat-wave .56s ease-in-out;
+  animation: octocat-wave .56s ease-in-out;
+}
 
 .box-outer {
 	overflow: hidden;
@@ -174,4 +177,35 @@
   0% { background-position: 0% 50%}
   50% { background-position: 100% 50%}
   100% { background-position: 0% 50%}
+}
+
+
+@-webkit-keyframes octocat-wave {
+	0%,
+	to {
+		transform: rotate(0)
+	}
+	20%,
+	60% {
+		transform: rotate(-25deg)
+	}
+	40%,
+	80% {
+		transform: rotate(10deg)
+	}
+}
+
+@keyframes octocat-wave {
+	0%,
+	to {
+		transform: rotate(0)
+	}
+	20%,
+	60% {
+		transform: rotate(-25deg)
+	}
+	40%,
+	80% {
+		transform: rotate(10deg)
+	}
 }

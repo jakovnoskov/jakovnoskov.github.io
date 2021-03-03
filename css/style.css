@@ -218,7 +218,6 @@ body a{color:#000;display: inline-block;margin-bottom:15px;}
     justify-content: center;
 	max-width: 58em;
     margin: 0 auto;
-
 }
 
 .scrollContactContent{
@@ -384,4 +383,5 @@ body a{color:#000;display: inline-block;margin-bottom:15px;}
 	.scrollContactContent a {margin: 0 1.6em;}
 	.ids-ittem-description, .ids-ittem-g-text { padding-bottom: 4em;}
 	.work-list li {font-size: 0.9em;}
+	.github-corner {display:none;}
 }
