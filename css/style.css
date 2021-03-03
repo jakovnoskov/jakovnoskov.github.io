@@ -91,6 +91,8 @@ table {
 .ids-ittem-g-name {font-size:40px;}
 .ids-ittem-g-text {font-size:20px;  padding: 20px 0px;}
 body a{color:#000;display: inline-block;margin-bottom:15px;}
+body a:hover {text-decoration: none;}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
