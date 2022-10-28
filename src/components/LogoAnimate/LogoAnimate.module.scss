@@ -1,0 +1,86 @@
+.LogoAnimateWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 54px;
+  height: 54px;
+
+  .line {
+    width: 8px;
+    height: 8px;
+    background-color: #4169e1;
+    border-radius: 50%;
+    transition: background-color 0.25s ease, color 0.2s ease, height 0.2s ease;
+  }
+
+  .animateLogoBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+
+    .item {
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: #aaacb287;
+      transition: background-color 0.7s ease, border-radius 0.7s ease, color 0.7s ease, height 0.7s ease, width 0.7s ease;
+    }
+
+    .item:nth-child(1) {
+      bottom: 10px;
+      left: 10px;
+    }
+
+    .item:nth-child(2) {
+      top: 10px;
+      left: 50%;
+      -moz-transform: scale(1.1) rotate(-60deg);
+      -webkit-transform: scale(1.1) rotate(-60deg);
+      -o-transform: scale(1.1) rotate(-60deg);
+      -ms-transform: scale(1.1) rotate(-60deg);
+      transform: scale(1.1) rotate(-60deg);
+    }
+
+    .item:nth-child(3) {
+      top: 10px;
+      right: 10px;
+    }
+
+    &:hover {
+      >* {
+        position: absolute;
+      }
+
+      .item:nth-child(1) {
+        background-color: #3e80ff;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+
+      }
+
+      .item:nth-child(2) {
+        background-color: #30e51d;
+        border-radius: 0%;
+        width: 1px;
+        height: 33px;
+
+      }
+
+      .item:nth-child(3) {
+        background-color: #ff0000;
+        border-radius: 0%;
+        width: 20px;
+        height: 15px;
+
+        z-index: 2;
+      }
+    }
+
+  }
+
+}

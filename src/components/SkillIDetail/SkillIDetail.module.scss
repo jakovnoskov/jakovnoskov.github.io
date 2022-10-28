@@ -1,0 +1,84 @@
+.skillDetail {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  position: relative;
+  padding: 40px 0;
+
+  .skillDetailWrapper {
+    background-color: #fff;
+    transition: opacity .2s ease, transform .2s ease;
+    transition: opacity .2s ease, transform .2s ease, -webkit-transform .2s ease;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    border-radius: 16px;
+    box-shadow: 0 4px 50px -12px rgb(17 12 46 / 16%);
+
+    .skillDetailLogo {
+
+      font-size: 60px;
+      font-weight: 300;
+      text-align: center;
+      align-items: center;
+      box-sizing: border-box;
+      display: flex;
+      height: 300px;
+      justify-content: center;
+      position: relative;
+
+      img {
+        width: 50%;
+        position: absolute;
+      }
+
+      // background: repeating-linear-gradient(90deg, #000000, #3a3838, #5d5d5d, #3a3838, #000000);
+      // background-repeat: repeat-x;
+      // background-size: 400% 100%;
+      // animation: AnimationName 300s linear infinite;
+    }
+
+    .skillDetailInfo {
+      padding: 40px;
+      // background: repeating-linear-gradient(90deg, #005239, #016748, #008c62, #016748, #005239);
+      // background-repeat: repeat-x;
+      // background-size: 400% 100%;
+      // animation: AnimationName 300s linear infinite;
+      color: #001f33;
+      //border-top: solid 1px #d9d9d9;
+
+      .skillDetailTitle {
+        font-size: 60px;
+        margin: 36px auto;
+        font-weight: 500;
+        display: block;
+      }
+
+      .skillDetailDescription {
+        font-size: 21px;
+        letter-spacing: 0.7px;
+        font-weight: 200;
+        display: block;
+      }
+
+      .skillProjectTitle {
+        font-size: 20px;
+        margin: 26px auto;
+        font-weight: 500;
+        display: block;
+      }
+
+
+    }
+
+  }
+}
+
+// @keyframes AnimationName {
+//   0% {
+//     background-position: 100% 50%
+//   }
+
+//   100% {
+//     background-position: -33% 50%
+//   }
+// }

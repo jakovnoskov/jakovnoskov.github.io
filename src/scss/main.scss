@@ -1,0 +1,44 @@
+@import './fonts.scss';
+@import './variables.scss';
+@import './libs/normalize.scss';
+
+@import './components/all.scss';
+
+
+body {
+  background-color: $background;
+  font-size: 18px;
+}
+
+#root {
+  //padding-top: 3em;
+  max-width: 72rem;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+
+a {
+  font-family: "Oswald", Roboto, system-ui, Tahoma, sans-serif;
+  color: #000;
+}
+
+main,
+article,
+aside,
+details,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+.horisontPaddingLeft {
+  padding-left: 3.125vw;
+}
+
+.horisontPaddingRight {
+  padding-right: 3.125vw;
+}

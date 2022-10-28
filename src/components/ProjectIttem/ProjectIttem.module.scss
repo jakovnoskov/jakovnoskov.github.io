@@ -1,0 +1,111 @@
+.iconWrapper {
+  display: inline-block;
+
+  .icon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 18px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+
+
+    .projectImg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      padding: 20%;
+    }
+  }
+
+  .iconTitle {
+    font-size: 14px;
+    text-align: center;
+  }
+
+}
+
+
+.blue {
+  background-image: -ms-linear-gradient(bottom, rgb(64, 191, 255) 9%, rgb(64, 146, 254) 55%);
+  overflow: hidden;
+  background-image: linear-gradient(bottom, rgb(64, 191, 255) 9%, rgb(64, 146, 254) 55%);
+  background-image: -o-linear-gradient(bottom, rgb(64, 191, 255) 9%, rgb(64, 146, 254) 55%);
+  background-image: -moz-linear-gradient(bottom, rgb(64, 191, 255) 9%, rgb(64, 146, 254) 55%);
+  background-image: -webkit-linear-gradient(bottom, rgb(64, 191, 255) 9%, rgb(64, 146, 254) 55%);
+
+}
+
+.blue2 {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgb(14, 173, 173)), color-stop(0.67, rgb(0, 255, 255)));
+  background-image: -moz-linear-gradient(center bottom, rgb(14, 173, 173) 33%, rgb(0, 255, 255) 67%);
+  padding: 2px;
+}
+
+.messages {
+  background-image: linear-gradient(bottom, rgb(12, 211, 26) 9%, rgb(142, 253, 120) 75%);
+  background-image: -o-linear-gradient(bottom, rgb(12, 211, 26) 9%, rgb(142, 253, 120) 75%);
+  background-image: -moz-linear-gradient(bottom, rgb(12, 211, 26) 9%, rgb(142, 253, 120) 75%);
+  background-image: -webkit-linear-gradient(bottom, rgb(12, 211, 26) 9%, rgb(142, 253, 120) 75%);
+  background-image: -ms-linear-gradient(bottom, rgb(12, 211, 26) 9%, rgb(142, 253, 120) 75%);
+  overflow: hidden;
+}
+
+.green {
+  background-image: linear-gradient(bottom, rgb(96, 192, 102) 9%, rgb(162, 216, 82) 75%);
+  background-image: -o-linear-gradient(bottom, rgb(96, 192, 102) 9%, rgb(162, 216, 82) 75%);
+  background-image: -moz-linear-gradient(bottom, rgb(96, 192, 102) 9%, rgb(162, 216, 82) 75%);
+  background-image: -webkit-linear-gradient(bottom, rgb(96, 192, 102) 9%, rgb(162, 216, 82) 75%);
+  background-image: -ms-linear-gradient(bottom, rgb(96, 192, 102) 9%, rgb(162, 216, 82) 75%);
+  overflow: hidden;
+}
+
+.orange {
+  background-image: linear-gradient(bottom, rgb(255, 198, 10) 9%, rgb(248, 128, 8) 55%);
+  background-image: -o-linear-gradient(bottom, rgb(255, 198, 10) 9%, rgb(248, 128, 8) 55%);
+  background-image: -moz-linear-gradient(bottom, rgb(255, 198, 10) 9%, rgb(248, 128, 8) 55%);
+  background-image: -webkit-linear-gradient(bottom, rgb(255, 198, 10) 9%, rgb(248, 128, 8) 55%);
+  background-image: -ms-linear-gradient(bottom, rgb(255, 198, 10) 9%, rgb(248, 128, 8) 55%);
+  overflow: hidden;
+}
+
+.yellow {
+  background-image: linear-gradient(bottom, rgb(186, 225, 67) 9%, rgb(255, 232, 27) 55%);
+  background-image: -o-linear-gradient(bottom, rgb(186, 225, 67) 9%, rgb(255, 232, 27) 55%);
+  background-image: -moz-linear-gradient(bottom, rgb(186, 225, 67) 9%, rgb(255, 232, 27) 55%);
+  background-image: -webkit-linear-gradient(bottom, rgb(186, 225, 67) 9%, rgb(255, 232, 27) 55%);
+  background-image: -ms-linear-gradient(bottom, rgb(186, 225, 67) 9%, rgb(255, 232, 27) 55%);
+  overflow: hidden;
+}
+
+.music {
+  background-image: linear-gradient(bottom, rgb(255, 92, 55) 9%, rgb(255, 40, 105) 55%);
+  background-image: -o-linear-gradient(bottom, rgb(255, 92, 55) 9%, rgb(255, 40, 105) 55%);
+  background-image: -moz-linear-gradient(bottom, rgb(255, 92, 55) 9%, rgb(255, 40, 105) 55%);
+  background-image: -webkit-linear-gradient(bottom, rgb(255, 92, 55) 9%, rgb(255, 40, 105) 55%);
+  background-image: -ms-linear-gradient(bottom, rgb(255, 92, 55) 9%, rgb(255, 40, 105) 55%);
+  overflow: hidden;
+}
+
+.camera {
+  background-image: linear-gradient(bottom, rgb(137, 140, 145) 9%, rgb(248, 248, 248) 75%);
+  background-image: -o-linear-gradient(bottom, rgb(137, 140, 145) 9%, rgb(248, 248, 248) 75%);
+  background-image: -moz-linear-gradient(bottom, rgb(137, 140, 145) 9%, rgb(248, 248, 248) 75%);
+  background-image: -webkit-linear-gradient(bottom, rgb(137, 140, 145) 9%, rgb(248, 248, 248) 75%);
+  background-image: -ms-linear-gradient(bottom, rgb(137, 140, 145) 9%, rgb(248, 248, 248) 75%);
+  overflow: hidden;
+}
+
+.itunes {
+  background-image: linear-gradient(bottom, rgb(163, 70, 255) 9%, rgb(252, 92, 191) 75%);
+  background-image: -o-linear-gradient(bottom, rgb(163, 70, 255) 9%, rgb(252, 92, 191) 75%);
+  background-image: -moz-linear-gradient(bottom, rgb(163, 70, 255) 9%, rgb(252, 92, 191) 75%);
+  background-image: -webkit-linear-gradient(bottom, rgb(163, 70, 255) 9%, rgb(252, 92, 191) 75%);
+  background-image: -ms-linear-gradient(bottom, rgb(163, 70, 255) 9%, rgb(252, 92, 191) 75%);
+  overflow: hidden;
+}

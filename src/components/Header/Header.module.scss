@@ -1,0 +1,127 @@
+.header {
+  //border-bottom: 1px solid #e6e6e6;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #c8c8c830;
+
+
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
+  .wrapperHeader {
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    background: #f7f8fbd4;
+    align-items: center;
+    height: 3em;
+
+    .headerSide {
+      display: -ms-flexbox;
+      display: flex;
+      min-width: 50%;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+
+    .hlIttem {
+      display: block;
+    }
+
+    .linkBox,
+    .hlIttem,
+    .headerSide,
+    .logoWrapper {
+      height: 100%;
+    }
+
+    .headerRight {}
+
+    .headerLeft {}
+
+
+    .headerLeft {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center;
+      flex-direction: row;
+
+    }
+
+    .linksWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      .linkWrapperBox {
+        display: flex;
+        height: 100%;
+        flex-direction: row;
+
+        .linkBox {
+          display: flex;
+          height: 100%;
+        }
+      }
+
+      a {
+        font-weight: 300;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        box-sizing: border-box;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        height: 100%;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        min-width: 120px;
+        padding: 0 16px;
+        color: #5f6368;
+        transition: background-color 0.25s ease, color 0.2s ease;
+        background-color: transparent;
+
+        &:hover {
+          color: #202124;
+          background-color: #e1e2e4;
+        }
+      }
+    }
+
+    .headerTools {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      padding-right: 1.5625vw;
+      position: relative;
+
+      .toolsWrapper {
+        display: -ms-flexbox;
+        display: flex;
+
+        .toolsIttem {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+
+}
