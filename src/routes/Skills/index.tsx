@@ -4,64 +4,20 @@ import styles from './Skills.module.scss';
 import { SkillItem } from '../../components/SkillItem';
 import { SkillIDetail } from '../../components/SkillIDetail';
 import FadeIn from '../../components/FadeIn';
-import { Iskill, manager, tool } from '../../stores/skills/type';
+import { Iskill } from '../../stores/skills/type';
 import { store } from '../../stores/skills/store'
 import { AboutMe } from '../../components/AboutMe';
 
 export const Skills: React.FC = observer(() => {
   const jsonFile: Iskill[] = require('../../assets/jsons/skils.json')
-  // const jsonFile: Iskill[] = require('../../assets/jsons/skils.json')
-  // const [currentSkill, setCurrentSkill] = useState<Iskill | null>()
-  // const [currentTool, setCurrentTool] = useState<tool | null>()
-  // const [currentManager, setCurrentManager] = useState<Iskill | null>()
-  // const [managers, setManagers] = useState<manager[]>([])
-  // const [tools, setTools] = useState<tool[]>([])
-  //const [activeId, setActiveId] = useState<number>()
-  //console.log('jsonFile', jsonFile)
-  // function addSkills(lkm: Iskill) {
-  //   setTools([]);
-  //   setManagers([]);
-  //   setCurrentTool(null);
-  //   setCurrentManager(null);
-  //   setCurrentSkill(lkm);
-  //   if (lkm.tools) {
-  //     lkm.tools.map((obj: tool) => {
-  //       setTools((prev) => [...prev, obj])
-  //     })
-  //   }
-  //   if (lkm.stateManagers) {
-  //     lkm.stateManagers.map((obj: manager) => {
-  //       setManagers((prev) => [...prev, obj])
-  //     })
-  //   }
-  // }
-  //
-  useEffect((() => {
-    //console.log(store.tools?.map((sKitem: any) => (console.log(sKitem.name))))
-    // store.setManagers(store.currentSkill.stateManagers)
-    // store.setCurrentTool(store.currentSkill.tools)
 
+  useEffect((() => {
     return store.setClearItem()
   }), [])
 
   useEffect((() => {
-    //store.setClearManagersTools()
-
-    console.log('store.tools', store.tools)
-    console.log('store.managers', store.managers)
-
-  }), [store.currentSkill])
-
-  useEffect((() => {
-    //store.setClearManagersTools()
-    //store.setManagersTools()
-
     store.setTools(jsonFile[0].tools)
     store.setManagers(jsonFile[0].stateManagers)
-
-    console.log('store.tools', store.tools)
-    console.log('store.managers', store.managers)
-
   }), [store.skills])
 
   return (

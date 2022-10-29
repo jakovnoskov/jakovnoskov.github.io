@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { getRandomEmoji } from '../../utils/getRandomEmoji';
+import { getRandomInt } from '../../utils/getRandomInt';
+import FadeIn from '../FadeIn';
 import './jobIttem.scss'
 
 export type job = {
@@ -11,6 +14,7 @@ export type job = {
   description?: string,
   duties?: string[],
   active?: number,
+  generateEmoji?: boolean,
 }
 
 export const JobIttem: React.FC<job> = ({
@@ -21,22 +25,47 @@ export const JobIttem: React.FC<job> = ({
   position,
   description,
   duties,
-  active
+  active,
+  generateEmoji,
 }) => {
+
   return (
     <div className="jobIttemBox">
 
       <div className="companyInfoBox">
         {logo &&
-          <img
-            src={require(`./logo/${logo}.svg`)}
-            className="job-logo"
-            alt={logo}
-          />
+          <FadeIn
+            className="logo-wrapper"
+            wrapperTag="div"
+            delay={getRandomInt(300, 900)}
+            transitionDuration={getRandomInt(300, 900)}
+          >
+            <img
+              src={require(`./logo/${logo}.svg`)}
+              className="job-logo"
+              alt={logo}
+            />
+          </FadeIn>
+
         }
         <div className="info">
-          <div className="main">{title}</div>
-          <div className="sub">{period?.[0]} - {period?.[1]}</div>
+          <FadeIn
+            className="main"
+            wrapperTag="div"
+            delay={getRandomInt(300, 900)}
+            transitionDuration={getRandomInt(300, 900)}
+          >
+            {title}
+          </FadeIn>
+          <FadeIn
+            className="sub"
+            childClassName="sub-item"
+            wrapperTag="div"
+            childTag="span"
+            delay={getRandomInt(300, 600)}
+            transitionDuration={getRandomInt(300, 600)}
+          >{period?.[0]} - {period?.[1]}
+          </FadeIn>
         </div>
 
       </div>
@@ -44,12 +73,42 @@ export const JobIttem: React.FC<job> = ({
       <div className="jobTimeline">
         <div className="description">
           <div className="description-wrap">
-            <div className="position">{position}</div>
-            <div className="description-title">{description}</div>
+            <FadeIn
+              className="position"
+              wrapperTag="div"
+              delay={getRandomInt(300, 900)}
+              transitionDuration={getRandomInt(300, 900)}
+            >
+              {position}
+            </FadeIn>
+            <FadeIn
+              className="description-title"
+              wrapperTag="div"
+              delay={getRandomInt(300, 900)}
+              transitionDuration={getRandomInt(300, 900)}
+            >
+              {description}
+            </FadeIn>
             <ul className="duties">
-              {duties?.map((item: string) => (
-                <li>{item}</li>
-              ))}
+              {duties?.map((item: string, index: number) => {
+                return (
+                  <FadeIn
+                    key={index}
+                    className="duties-item"
+                    wrapperTag="li"
+                    delay={getRandomInt(300, 900)}
+                    transitionDuration={getRandomInt(300, 900)}
+                  >
+                    <div
+                      data-icon={`${generateEmoji ? getRandomEmoji() : getRandomEmoji()}`}
+                      className="duties-item-wrapper"
+                    >
+                      {item}
+                    </div>
+                  </FadeIn>
+                )
+              }
+              )}
             </ul>
           </div>
         </div>

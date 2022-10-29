@@ -30,6 +30,12 @@
     .sub {
       font-size: 15px;
       color: #0000006b;
+
+      .sub-item {
+        display: inline-block;
+        padding: 0 2px;
+
+      }
     }
   }
 
@@ -51,13 +57,19 @@
     }
 
     .duties {
-      list-style: disc;
+      // list-style: disc;
       padding-left: 1em;
 
       li {
         padding-bottom: 0.8em;
         font-weight: 300;
-        list-style: disc;
+        // list-style: disc;
+
+        .duties-item-wrapper::before {
+          content: attr(data-icon);
+          font-size: 1.25em;
+          padding-right: 1em;
+        }
       }
     }
   }
