@@ -1,11 +1,19 @@
 .jobIttemBox {
   border-bottom: 1px solid #d2d2d7;
-  grid-template-columns: 1fr 3fr;
-  display: flex;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  padding: 70px 3.125vw;
+
+
+  @media (min-width: 880px) {
+    grid-template-columns: 1fr 3fr;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    padding: 70px 3.125vw;
+  }
+
+  @media (max-width: 880px) {
+    padding: 20px;
+  }
 
   &:last-child {
     border-bottom: none;
@@ -42,12 +50,17 @@
   .jobTimeline {
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
-    overflow: hidden;
 
     .position {
       font-size: 40px;
       font-weight: 600;
       margin-bottom: 20px;
+
+      @media (max-width: 880px) {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
     }
 
     .description-title {
@@ -63,12 +76,19 @@
       li {
         padding-bottom: 0.8em;
         font-weight: 300;
+        padding-left: 1em;
+
         // list-style: disc;
+        .duties-item-wrapper {
+          position: relative;
+        }
 
         .duties-item-wrapper::before {
           content: attr(data-icon);
           font-size: 1.25em;
-          padding-right: 1em;
+          position: absolute;
+          left: -35px;
+          top: 0;
         }
       }
     }

@@ -46,7 +46,7 @@ export const Header: React.FC = () => {
               <Link to={'experience'} className={styles.hlIttem}>
                 Опыт работы
               </Link>
-              <Link to={'contacts'} className={styles.hlIttem}>
+              <Link to={'contacts'} className={styles.hlIttem + ' ' + styles.linkSkill}>
                 Контакты
               </Link>
             </FadeIn>

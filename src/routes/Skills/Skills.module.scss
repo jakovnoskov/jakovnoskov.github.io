@@ -1,12 +1,19 @@
 .article {
-  grid-template-columns: 2fr 2fr;
-  display: -ms-flexbox;
-  display: grid;
   position: relative;
+
+  @media (min-width: 880px) {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
 
   .skillWrapper {
     padding-top: 40px;
     padding-bottom: 40px;
+
+    @media (max-width: 880px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
 
     .skillItemList {
       margin-bottom: 30px;
@@ -14,9 +21,17 @@
   }
 
   .skillTitle {
-    font-size: 60px;
     font-weight: 500;
-    margin-bottom: 30px;
+
+    @media (min-width: 880px) {
+      font-size: 60px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 880px) {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
   }
 
   .skillSubtitleTitle {
@@ -28,4 +43,31 @@
 
 .skillIttemWrapper {
   display: inline-block;
+}
+
+.globalWrapperSkill {
+  padding-right: 3.125vw;
+
+
+  @media (max-width: 880px) {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    display: none;
+    padding-right: 0;
+
+    &.showMobileSkill {
+      display: block;
+    }
+
+
+  }
+
+  .skillDetail {
+    padding: 0;
+  }
 }

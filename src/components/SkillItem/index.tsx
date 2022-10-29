@@ -10,6 +10,7 @@ type СategoriesProps = {
   cat: string
   currentCat: string
   onClick?: (cat: string, idx: Iskill) => void
+  setMobileSkill: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 export const SkillItem: FC<СategoriesProps> = ({
@@ -17,13 +18,19 @@ export const SkillItem: FC<СategoriesProps> = ({
   active,
   cat,
   currentCat,
-  onClick
+  onClick,
+  setMobileSkill
 }) => {
 
   const [vis, setVisibility] = useState(true);
   const [mount, setMount] = useState(false);
   const [opacityStyle, setOpacity] = useState(0);
   const [translateStyle, setTranslateStyle] = useState("translateY(20px)");
+
+  function onClickSkill(cat: string, value: Iskill) {
+    setMobileSkill(true)
+    onClick && (onClick(cat, value))
+  }
 
   /** un-mount */
   useEffect(() => {
@@ -75,10 +82,7 @@ export const SkillItem: FC<СategoriesProps> = ({
     >
       <button
         onClick={
-          onClick && (() => {
-            //console.log('value inside SkillItem', value)
-            return onClick(cat, value)
-          })}
+          onClick && (() => onClickSkill(cat, value))}
         className={styles.skillItem + ' ' +
           (cat === currentCat && active && active === String(value.id) ? styles.active : '')
         }

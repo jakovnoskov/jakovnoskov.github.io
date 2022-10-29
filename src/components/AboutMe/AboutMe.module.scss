@@ -3,6 +3,10 @@
   flex-basis: 50%;
   position: relative;
   padding: 40px 0;
+
+  @media (max-width: 880px) {
+    display: none;
+  }
 }
 
 // Colors

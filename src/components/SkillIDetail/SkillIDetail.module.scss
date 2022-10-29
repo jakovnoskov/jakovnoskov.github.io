@@ -1,8 +1,29 @@
 .skillDetail {
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
+  height: 100%;
   position: relative;
   padding: 40px 0;
+
+  .close {
+    display: none;
+  }
+
+  @media (max-width: 880px) {
+    padding: 0;
+
+    .close {
+      display: block;
+      right: 30px;
+      top: 30px;
+      width: 2em;
+      height: 2em;
+      z-index: 2000;
+      cursor: pointer;
+      background-color: #00000033;
+      clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    }
+  }
 
   .skillDetailWrapper {
     background-color: #fff;
@@ -13,6 +34,12 @@
 
     border-radius: 16px;
     box-shadow: 0 4px 50px -12px rgb(17 12 46 / 16%);
+
+    @media (max-width: 880px) {
+      overflow: auto;
+      height: 100%;
+    }
+
 
     .skillDetailLogo {
 
@@ -44,7 +71,15 @@
       // background-size: 400% 100%;
       // animation: AnimationName 300s linear infinite;
       color: #001f33;
+
       //border-top: solid 1px #d9d9d9;
+
+      .boxCloseImg {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 1em;
+      }
 
       .skillDetailTitle {
         font-size: 60px;
@@ -65,6 +100,21 @@
         margin: 26px auto;
         font-weight: 500;
         display: block;
+      }
+
+      @media (max-width: 550px) {
+        padding: 20px;
+
+        .skillDetailTitle {
+          font-size: 30px;
+          margin: 20px auto;
+        }
+
+        .skillProjectTitle {
+          font-size: 16px;
+          margin: 10px auto;
+        }
+
       }
 
 

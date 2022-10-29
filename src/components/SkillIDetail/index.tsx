@@ -6,28 +6,30 @@ import { ProjectIttem } from '../ProjectIttem';
 import { getRandomInt } from '../../utils/getRandomInt';
 
 
-export const SkillIDetail: React.FC = observer(() => {
+type skillDetailProps = {
+  setMobileSkill: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+export const SkillIDetail: React.FC<skillDetailProps> = observer(({ setMobileSkill }) => {
 
   const [mount, setMount] = useState(false);
   const [opacityStyle, setOpacity] = useState(0);
   const [translateStyle, setTranslateStyle] = useState("translateY(100px)");
   const [localObject, setLocalObject] = useState(store.showElement);
 
-
-
   /** un-mount */
   useEffect(() => {
-    if (mount) {
 
+    if (mount) {
       let timerFadeout = setTimeout(
         () => {
           setOpacity(0);
-          setTranslateStyle("translateX(-200px)");
+          setTranslateStyle("translateY(-200px)");
           //setTranslateStyle("translateX(20px)");
         }, 0);
       let timerMid = setTimeout(
         () => {
-          setTranslateStyle("translateX(100px)");
+          setTranslateStyle("translateY(100px)");
         }, 100);
       let timer = setTimeout(
         () => {
@@ -59,6 +61,25 @@ export const SkillIDetail: React.FC = observer(() => {
     return () => clearTimeout(timer);
   }, []);
 
+  function onClickClose() {
+    let timerFadeout = setTimeout(
+      () => {
+        setOpacity(0);
+        setTranslateStyle("translateY(-200px)");
+        //setTranslateStyle("translateX(20px)");
+      }, 0);
+    let timerMid = setTimeout(
+      () => {
+        setTranslateStyle("translateY(200px)");
+        setMobileSkill(false)
+      }, 100);
+
+    return () => {
+      clearTimeout(timerMid);
+      clearTimeout(timerFadeout);
+    }
+  }
+
 
   return (
     <div
@@ -70,14 +91,24 @@ export const SkillIDetail: React.FC = observer(() => {
       }}
     >
       <div className={styles.skillDetailWrapper} style={{ opacity: opacityStyle, }}>
+
+
         <div className={styles.skillDetailInfo}>
-          {localObject && localObject.logo ?
-            <img
-              style={{ width: '100px' }}
-              src={require(`./logo/${localObject.logo}.svg`)}
-              alt={localObject.logo}
+
+          <div className={styles.boxCloseImg}>
+            {localObject && localObject.logo ?
+              <img
+                style={{ width: '100px' }}
+                src={require(`./logo/${localObject.logo}.svg`)}
+                alt={localObject.logo}
+              />
+              : null}
+            <div
+              onClick={() => onClickClose()}
+              className={styles.close}
             />
-            : null}
+          </div>
+
           <h1 className={styles.skillDetailTitle}>
             {localObject?.name}
           </h1>

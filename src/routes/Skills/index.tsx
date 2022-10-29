@@ -10,12 +10,15 @@ import { AboutMe } from '../../components/AboutMe';
 
 export const Skills: React.FC = observer(() => {
   const jsonFile: Iskill[] = require('../../assets/jsons/skils.json')
+  const [mobileSkill, setMobileSkill] = useState(false)
 
   useEffect((() => {
     return store.setClearItem()
   }), [])
 
   useEffect((() => {
+    //setMobileSkill(true)
+    console.log(mobileSkill)
     store.setTools(jsonFile[0].tools)
     store.setManagers(jsonFile[0].stateManagers)
   }), [store.skills])
@@ -51,6 +54,7 @@ export const Skills: React.FC = observer(() => {
                 cat={'skills'}
                 currentCat={store.currentCat}
                 value={sKitem}
+                setMobileSkill={setMobileSkill}
                 onClick={store.setCurrentItem}
               />
             )
@@ -76,12 +80,14 @@ export const Skills: React.FC = observer(() => {
                     cat={'tools'}
                     currentCat={store.currentCat}
                     value={sKitem}
+                    setMobileSkill={setMobileSkill}
                     onClick={store.setSelectItem}
                   />
                 ))}
 
             </div>
           </> : null}
+
         {store.managers?.length > 0 ?
           <>
             <FadeIn
@@ -100,6 +106,7 @@ export const Skills: React.FC = observer(() => {
                   cat={'managers'}
                   currentCat={store.currentCat}
                   value={sKitem}
+                  setMobileSkill={setMobileSkill}
                   onClick={store.setSelectItem}
                 />
               ))}
@@ -107,12 +114,15 @@ export const Skills: React.FC = observer(() => {
           </> : null}
 
       </div>
-      {store.showElement ? <SkillIDetail /> : null}
-      {store.showElement ? null :
-        <FadeIn transitionDuration={700} delay={700} >
-          <AboutMe />
-        </FadeIn>
-      }
+      <div
+        className={`${styles.globalWrapperSkill} ${mobileSkill ? styles.showMobileSkill : ''}`}>
+        {store.showElement ? <SkillIDetail setMobileSkill={setMobileSkill} /> : null}
+        {store.showElement ? null :
+          <FadeIn transitionDuration={700} delay={700} >
+            <AboutMe />
+          </FadeIn>
+        }
+      </div>
     </div>
   )
 })
