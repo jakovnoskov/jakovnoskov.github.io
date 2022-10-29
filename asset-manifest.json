@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.3092bd09.css",
-    "main.js": "/static/js/main.8d799420.js",
-    "JobExperience.css": "/static/css/JobExperience.ab3ff5c3.chunk.css",
+    "main.css": "/static/css/main.e0c0b3be.css",
+    "main.js": "/static/js/main.167dbe71.js",
+    "JobExperience.css": "/static/css/JobExperience.47ef4b6c.chunk.css",
     "JobExperience.js": "/static/js/JobExperience.799fac0d.chunk.js",
     "Detail.css": "/static/css/Detail.b2e9f2ff.chunk.css",
     "Detail.js": "/static/js/Detail.9f925d26.chunk.js",
@@ -57,6 +57,7 @@
     "static/media/hooks.svg": "/static/media/hooks.938b1671d0f279537336.svg",
     "static/media/reduxToolkit.svg": "/static/media/reduxToolkit.8b150007980ae49cf947.svg",
     "static/media/mobx.svg": "/static/media/mobx.9d00f6d41b1ad42f6038.svg",
+    "static/media/redux-saga.svg": "/static/media/redux-saga.7020de63dcc408a69b7a.svg",
     "static/media/scrollview.svg": "/static/media/scrollview.92ba2808140a7c984227.svg",
     "static/media/asyncstorage.svg": "/static/media/asyncstorage.57ef1cc375c9181ddb8d.svg",
     "static/media/react-router.svg": "/static/media/react-router.d3a3678be263c9df0964.svg",
@@ -64,8 +65,8 @@
     "static/media/javascript.svg": "/static/media/javascript.fd46ca41839433d73577.svg",
     "static/media/ul.svg": "/static/media/ul.d247ee8bcc4219a81182.svg",
     "static/media/xsolla.svg": "/static/media/xsolla.9c2d224dfb0da4857973.svg",
-    "static/media/netinfo.svg": "/static/media/netinfo.17703d12831382b1c4ce.svg",
     "index.html": "/index.html",
+    "static/media/netinfo.svg": "/static/media/netinfo.17703d12831382b1c4ce.svg",
     "static/media/redux.svg": "/static/media/redux.71eb13e2fdd1de624e9a.svg",
     "static/media/typescript.svg": "/static/media/typescript.65d286117e3668521589.svg",
     "static/media/brainstorm.svg": "/static/media/brainstorm.3fb47cab3e1201a4bccf.svg",
@@ -77,9 +78,9 @@
     "static/media/react.svg": "/static/media/react.151a281bc5f0fdaa8cba.svg",
     "static/media/maskinput.svg": "/static/media/maskinput.484e64ad610eca378677.svg",
     "static/media/geolocation.svg": "/static/media/geolocation.eade28038b1e0f002b7f.svg",
-    "main.3092bd09.css.map": "/static/css/main.3092bd09.css.map",
-    "main.8d799420.js.map": "/static/js/main.8d799420.js.map",
-    "JobExperience.ab3ff5c3.chunk.css.map": "/static/css/JobExperience.ab3ff5c3.chunk.css.map",
+    "main.e0c0b3be.css.map": "/static/css/main.e0c0b3be.css.map",
+    "main.167dbe71.js.map": "/static/js/main.167dbe71.js.map",
+    "JobExperience.47ef4b6c.chunk.css.map": "/static/css/JobExperience.47ef4b6c.chunk.css.map",
     "JobExperience.799fac0d.chunk.js.map": "/static/js/JobExperience.799fac0d.chunk.js.map",
     "Detail.b2e9f2ff.chunk.css.map": "/static/css/Detail.b2e9f2ff.chunk.css.map",
     "Detail.9f925d26.chunk.js.map": "/static/js/Detail.9f925d26.chunk.js.map",
@@ -93,7 +94,7 @@
     "ErrorPage.43b5d913.chunk.js.map": "/static/js/ErrorPage.43b5d913.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3092bd09.css",
-    "static/js/main.8d799420.js"
+    "static/css/main.e0c0b3be.css",
+    "static/js/main.167dbe71.js"
   ]
 }
