@@ -1,3 +1,15 @@
-##  About me 
+## More about me
+```kotlin
+val terrakok = developer {
+    about {
+        name = "Яков Носков"
+        role = Frontend Developer
+    }
+    tech("JavaScript", "React", "React Native")
+    links {
+        telegram = "@someonesess"
+        email = 'jakovnoskov@hotmail.com',
+    }
+}
+```
 
-My name is Jacov. I have been doing commercial development since 2013. For the last 4 years I have been creating mobile apps for iOS

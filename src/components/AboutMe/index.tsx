@@ -19,6 +19,9 @@ export const AboutMe: React.FC = observer(() => {
             <div>7</div>
             <div>8</div>
             <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
           </div>
 
           <code>
@@ -37,26 +40,46 @@ export const AboutMe: React.FC = observer(() => {
               <span className={styles.string}>'Frontend Developer'</span>
               <span>,</span>
             </div>
-            {/* <div className={styles.indent}>
-              <span className={styles.property}>description</span>
+            <div className={styles.indent}>
+              <span className={styles.property}>tech</span>
               <span className={styles.operator}>: </span>
-              <span className={styles.string}>'Меня зовут Яков. Я занимаюсь разработкой React приложений'</span>
+
+              <span>{"["}</span>
+              <div className={styles.indent}>
+                <span className={styles.string}> "JavaScript"</span>
+                <span>,</span>
+              </div>
+              <div className={styles.indent}>
+                <span className={styles.string}> "TypeScript"</span>
+                <span>,</span>
+              </div>
+              <div className={styles.indent}>
+                <span className={styles.string}> "React"</span>
+                <span>,</span>
+              </div>
+              <div className={styles.indent}>
+                <span className={styles.string}>"React Native"</span>
+                <span>,</span>
+              </div>
+              <span>{"]"}</span>
               <span>,</span>
-            </div> */}
+
+            </div>
             <div className={styles.indent}>
               <span className={styles.property}>contact</span>
               <span className={styles.operator}>: </span>
               <span>{"{"}</span>
               <div className={styles.indent}>
+                <span className={styles.property}>telegram</span>
+                <span className={styles.operator}>: </span>
+                <span className={styles.string}>'@someonesess'</span>
+                <span>,</span>
+              </div>
+              <div className={styles.indent}>
                 <span className={styles.property}>email</span>
                 <span className={styles.operator}>: </span>
                 <span className={styles.string}>'jakovnoskov@hotmail.com'</span>
                 <span>,</span>
-              </div>
-              <div className={styles.indent}>
-                <span className={styles.property}>website</span>
-                <span className={styles.operator}>:</span>
-                <span className={styles.string}>'jakovnoskov.github.io'</span>
               </div>
               <span>{"}"}</span>
             </div>
@@ -64,7 +87,7 @@ export const AboutMe: React.FC = observer(() => {
           </code>
         </div>
 
-      </div>
-    </div>
+      </div >
+    </div >
   )
 })
